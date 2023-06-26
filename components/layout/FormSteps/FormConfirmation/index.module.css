@@ -1,0 +1,144 @@
+.form {
+    max-width: 621px;
+    min-width: 530px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 5px solid #078586;
+    border-radius: 10px;
+    background: rgba(0, 59, 86, 0.85);
+    padding: 23px;
+    margin: 30px auto 0 auto;
+
+    overflow-y: auto;
+    position: relative;
+}
+
+.goBack {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.goBack span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.fromTitle {
+    color: #FFFFFF;
+    width: 260px;
+    border-bottom: 1px solid #FFFFFF;
+
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.fromTitle span {
+    color: #078586;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.nestedNode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.type {
+    color: #078586;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.value {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn {
+    width: 260px;
+    border: 1px solid #078586;
+    border-radius: 5px;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 12px 0;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        padding: 30px 10px 10px 10px;
+        min-width: initial;
+        height: initial;
+    }
+
+    .goBack {
+        top: 5px;
+        left: 5px;
+    }
+
+    .goBack span {
+        font-size: 12px;
+    }
+
+    .goBack svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nestedNode:last-child .node {
+        align-items: end;
+        
+    }
+
+    .nestedNode .value {
+        white-space: nowrap;
+        font-size: 20px;
+    }
+
+    .nestedNode:last-child .type,
+    .nestedNode:last-child .value {
+        text-align: end;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .nestedNode .type,
+    .nestedNode .value {
+        font-size: 14px;
+    }
+}

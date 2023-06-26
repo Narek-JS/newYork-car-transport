@@ -1,0 +1,48 @@
+.articlesSection {
+    padding-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.subTitle {
+    color: #078586;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.row {
+    height: 25px;
+    width: 4px;
+    background-color: rgba(0, 59, 86, 0.6);
+    border-radius: 15px;
+}
+
+.wrapperForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formTitle {
+    color: #003B56;
+    font-weight: 700;
+    font-size: 20px;
+    transform: translateY(-40px);
+}
+
+.formTitle span {
+    color: #078586;
+}
+
+@media screen and (max-width: 991px) {
+    .wrapperForm {
+        width: 100%;
+    }
+}

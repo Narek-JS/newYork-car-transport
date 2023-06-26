@@ -1,0 +1,50 @@
+.carService {
+    width: 306px;
+    height: 268px;
+    padding: 10px;
+    border: 2px solid #078586;
+    box-shadow: 5px 5px 5px rgba(0, 59, 86, 0.3);
+    border-radius: 10px;
+    position: relative;
+}
+
+.image {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 18px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FDFDFF;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FDFDFF;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FDFDFF;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

@@ -1,0 +1,49 @@
+.calculatedFee {
+    padding-bottom: 38px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 40px;
+    color: #078586;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.steps {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border: 1px solid #078586;
+    border-radius: 5px;
+    width: 140px;
+    color: #078586;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+    .steps {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

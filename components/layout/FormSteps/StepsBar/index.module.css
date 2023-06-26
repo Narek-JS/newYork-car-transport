@@ -1,0 +1,127 @@
+.stepsBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.stepNumber {
+    width: 80px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    color: #078586;
+
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.activeStep .stepNumber {
+    background-color: #078586;
+    color: #FFFFFF;
+}
+
+.textWrapper {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.activeStep .textWrapper {
+    background-color: #078586;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.row {
+    height: 1px;
+    background: #FFFFFF;
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 15px;
+}
+
+.row::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: #FFFFFF;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.quoteForm .stepNumber {
+    border: 1px solid #078586;
+}
+
+.quoteForm .text {
+    color: #078586;
+}
+
+.quoteForm .row, .quoteForm .row::after {
+    background-color: #078586;
+}
+
+.quoteForm .row::before {
+    background-color: #078586;
+
+}
+
+.quoteForm {
+    justify-content: center;
+}
+
+.quoteForm .step {
+    flex: initial;
+}
+
+.quoteForm .row {
+    min-width: 30px;
+}
+
+.activeStep .text {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+    .stepNumber {
+        width: 45px;
+        height: 45px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        color: #078586;
+    }
+
+    .row, .row::after {
+        background: #078586;
+    }
+
+    .stepNumber {
+        border: 1px solid #078586;
+    }
+}

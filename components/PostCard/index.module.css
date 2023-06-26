@@ -1,0 +1,66 @@
+.card {
+    background: #F4F7FB;
+    border: 2px solid #078586;
+    border-radius: 15px;
+    height: fit-content;
+    max-width: 400px;
+}
+
+.image {
+    border-radius: 15px 15px 0 0;
+    max-width: 400px;
+    max-height: 340px;
+}
+
+.content {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categoryName {
+    color: #078586;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.description {
+    color: #003B56;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date {
+   display: flex;
+   align-items: center;
+   gap: 10px; 
+}
+
+.date span {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #078586;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.viewAll {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+    font-size: 20px;
+}
